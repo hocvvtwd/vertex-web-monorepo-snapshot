@@ -81,7 +81,7 @@ export function AvatarTypeSelector({
       },
       {
         type: 'library',
-        title: 'Vertex Avatar',
+        title: 'Foxify Avatar',
         icon: (
           <Image
             src={AvatarIcon}

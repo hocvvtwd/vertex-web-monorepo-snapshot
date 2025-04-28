@@ -6,25 +6,23 @@ import blitzBrandIcon from 'client/assets/brand/blitz-brand-icon.svg';
 import blitzLogo from 'client/assets/brand/blitz-logo.svg';
 import blitzMonochromeIcon from 'client/assets/brand/blitz-monochrome-icon.svg';
 import vertexBrandBg from 'client/assets/brand/vertex-brand-bg.webp';
-import vertexBrandIcon from 'client/assets/brand/vertex-brand-icon.svg';
-import vertexLogo from 'client/assets/brand/vertex-logo.svg';
-import vertexMonochromeIcon from 'client/assets/brand/vertex-monochrome-icon.svg';
-import vertex3dLogo from 'client/assets/brand/vertex-3d-logo.png';
+import foxifyBrandIcon from 'client/assets/brand/foxify-brand-icon.svg';
+import foxifyLogo from 'client/assets/brand/foxify-logo.svg';
 import axelarLogo from 'client/assets/partners/axelar-logo.svg';
 import elixirLogo from 'client/assets/partners/elixir-logo.svg';
 import skateLogo from 'client/assets/partners/skatefi-logo.svg';
 import squidLogo from 'client/assets/partners/squid-logo.svg';
-import vlpSquareIcon from 'client/assets/vlp/vlp-square-icon.svg';
 import { clientEnv } from 'common/environment/clientEnv';
+import vlpSquareIcon from 'client/assets/vlp/vlp-square-icon.svg';
 
 const BRAND_IMAGES = {
   vertex: {
     // Square black/white icon
-    brandMonochromeIcon: vertexMonochromeIcon,
+    brandMonochromeIcon: foxifyBrandIcon,
     // Square icon
-    brandIcon: vertexBrandIcon,
+    brandIcon: foxifyBrandIcon,
     // Full name logo
-    brandLogo: vertexLogo,
+    brandLogo: foxifyLogo,
     // Brand background image
     brandBg: vertexBrandBg,
   },
@@ -59,5 +57,5 @@ export const BLITZ_SPECIFIC_IMAGES = {
 
 export const VERTEX_SPECIFIC_IMAGES = {
   vlpSquareIcon,
-  vertex3dLogo,
+  vertex3dLogo: foxifyBrandIcon,
 };

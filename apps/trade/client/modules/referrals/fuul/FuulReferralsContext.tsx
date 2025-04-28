@@ -60,7 +60,7 @@ const FuulReferralsContext = createContext<FuulReferralsContextData>(
   {} as FuulReferralsContextData,
 );
 
-Fuul.init({ apiKey: SENSITIVE_DATA.fuulApiKey });
+// Fuul.init({ apiKey: SENSITIVE_DATA.fuulApiKey });
 
 export function FuulReferralsProvider({ children }: WithChildren) {
   const { isFuulPageEnabled } = useEnabledFeatures();

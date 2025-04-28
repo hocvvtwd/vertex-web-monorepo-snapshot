@@ -2,7 +2,7 @@ import { PRIMARY_SUBACCOUNT_NAME } from 'client/modules/subaccounts/consts';
 
 export function getDefaultSubaccountUsername(subaccountName: string) {
   if (subaccountName === PRIMARY_SUBACCOUNT_NAME) {
-    return 'Account 1';
+    return 'Foxify';
   }
 
   // Match only subbacount names that we create on the FE, which should have

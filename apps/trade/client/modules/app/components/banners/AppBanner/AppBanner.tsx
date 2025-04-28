@@ -26,7 +26,6 @@ import sonicDesktopBannerBg from 'client/modules/app/components/banners/AppBanne
 import sonicMobileBannerBg from 'client/modules/app/components/banners/AppBanner/assets/sonic-mobile-banner-bg.png';
 import vertexDesktopBannerBg from 'client/modules/app/components/banners/AppBanner/assets/vertex-desktop-banner-bg.png';
 import vertexMobileBannerBg from 'client/modules/app/components/banners/AppBanner/assets/vertex-mobile-banner-bg.png';
-import { VERTEX_SPECIFIC_IMAGES } from 'common/brandMetadata/images';
 
 import Image from 'next/image';
 
@@ -100,7 +99,7 @@ export function AppBanner({
   const bgImageSrc =
     BG_IMAGE_SRC_BY_VARIANT_BY_SIZE_CLASS[sizeClass.value][variant];
 
-  const isVertexVariant = variant === 'vertex';
+  // const isVertexVariant = variant === 'vertex';
 
   return (
     <div
@@ -112,13 +111,13 @@ export function AppBanner({
       )}
     >
       {children}
-      {isVertexVariant && (
+      {/* {isVertexVariant && (
         <Image
           src={VERTEX_SPECIFIC_IMAGES.vertex3dLogo}
           alt=""
           className="absolute bottom-1 left-[5%] -z-1 h-full w-auto sm:left-[25%] lg:left-[30%]"
         />
-      )}
+      )} */}
       {bgImageSrc && (
         <Image
           className="absolute right-0 left-0 -z-10 h-full w-full"

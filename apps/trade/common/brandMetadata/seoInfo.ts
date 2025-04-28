@@ -16,17 +16,17 @@ interface BrandSeoMetadata {
 
 const BRAND_SEO_METADATA_BY_BRAND_NAME: Record<BrandName, BrandSeoMetadata> = {
   vertex: {
-    title: 'Vertex | Trade Crypto with an Edge',
+    title: 'Foxify - Trade Perpetuals Decentralized',
     description:
-      'Traders choose Vertex for decentralized spot and perpetual cryptocurrency trading with the fastest speeds, lowest fees, and deep liquidity. Trade spot and perp crypto markets across multiple blockchains including Arbitrum, Base, and Sei.',
-    bannerImage: 'https://vertexprotocol.com/img/twitter-preview-banner.png',
+      'Instant FUNDING for traders, up to 10,000 USDC starting with as little as 100 USDC deposit. Trade 50+ Markets, with up to 20x Leverage.',
+    bannerImage: 'https://main.d23b1tmk4jf4py.amplifyapp.com/og_foxify.png',
     siteManifest: '/vertex-site.webmanifest',
-    faviconIco: '/vertex-favicon.ico',
-    faviconSvg: '/vertex-icon.svg',
-    appleTouchIcon: '/vertex-apple-touch-icon.png',
-    tileColor: '#8041E5',
+    faviconIco: '/foxify-favicon.ico',
+    faviconSvg: '/foxify-icon.svg',
+    appleTouchIcon: '/foxify-apple-touch-icon.png',
+    tileColor: '#F66B31',
     headerColor: '#000000',
-    xUsername: '@vertex_protocol',
+    xUsername: '@foxifytrade',
   },
   blitz: {
     title: 'Blitz | Trade Crypto with an Edge',

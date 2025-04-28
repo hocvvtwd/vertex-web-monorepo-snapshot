@@ -1,12 +1,12 @@
-import { withSentryConfig } from '@sentry/nextjs';
+// import { withSentryConfig } from '@sentry/nextjs';
 import brandName from 'common/environment/envBrandName';
 import { NextConfig } from 'next';
 import nextBuildId from 'next-build-id';
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  // eslint-disable-next-line turbo/no-undeclared-env-vars
-  enabled: process.env.ANALYZE === 'true',
-});
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   // eslint-disable-next-line turbo/no-undeclared-env-vars
+//   enabled: process.env.ANALYZE === 'true',
+// });
 
 // use first 7 characters of git commit hash as build id
 const buildId = nextBuildId.sync({ dir: __dirname }).substring(0, 7);
@@ -90,23 +90,24 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withSentryConfig(
-  withBundleAnalyzer(nextConfig),
-  // For all available options, see:
-  // https://www.npmjs.com/package/@sentry/webpack-plugin
-  // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
-  {
-    org: 'vertex-protocol',
-    project: 'frontend-trade',
-    // Upload a larger set of source maps for prettier stack traces (increases build time)
-    widenClientFileUpload: true,
-    // Routes browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers (increases server load)
-    tunnelRoute: '/monitoring',
-    // Automatically tree-shake Sentry logger statements to reduce bundle size
-    disableLogger: true,
-    // Disable noisy sourcemaps build logs
-    silent: true,
-    // Disable Sentry's own 'product improvement' telemetry
-    telemetry: false,
-  },
-);
+export default nextConfig;
+// export default withSentryConfig(
+//   withBundleAnalyzer(nextConfig),
+//   // For all available options, see:
+//   // https://www.npmjs.com/package/@sentry/webpack-plugin
+//   // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+//   {
+//     org: 'vertex-protocol',
+//     project: 'frontend-trade',
+//     // Upload a larger set of source maps for prettier stack traces (increases build time)
+//     widenClientFileUpload: true,
+//     // Routes browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers (increases server load)
+//     tunnelRoute: '/monitoring',
+//     // Automatically tree-shake Sentry logger statements to reduce bundle size
+//     disableLogger: true,
+//     // Disable noisy sourcemaps build logs
+//     silent: true,
+//     // Disable Sentry's own 'product improvement' telemetry
+//     telemetry: false,
+//   },
+// );

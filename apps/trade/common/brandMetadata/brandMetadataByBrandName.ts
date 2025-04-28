@@ -3,7 +3,7 @@ import { BrandName } from 'common/environment/types';
 
 export const BRAND_METADATA_BY_BRAND_NAME: Record<BrandName, BrandMetadata> = {
   vertex: {
-    displayName: 'Vertex',
+    displayName: 'Foxify',
   },
   blitz: {
     displayName: 'Blitz',
