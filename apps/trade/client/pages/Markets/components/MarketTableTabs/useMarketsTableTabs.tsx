@@ -1,6 +1,6 @@
 import { useTabs } from 'client/hooks/ui/tabs/useTabs';
 import { useEnabledFeatures } from 'client/modules/envSpecificContent/hooks/useEnabledFeatures';
-import { MoneyMarketsTable } from 'client/modules/tables/MoneyMarketsTable';
+// import { MoneyMarketsTable } from 'client/modules/tables/MoneyMarketsTable';
 import { MarketsTableSearchWrapper } from 'client/pages/Markets/components/MarketsTableSearchWrapper';
 import { FundingRateMarketsTable } from 'client/pages/Markets/tables/FundingRateMarketsTable';
 import { PerpMarketsTable } from 'client/pages/Markets/tables/PerpMarketsTable';
@@ -41,11 +41,11 @@ export function useMarketsTableTabs() {
           />
         ),
       },
-      {
-        id: 'money_market',
-        label: 'Lend/Borrow',
-        content: <MoneyMarketsTable />,
-      },
+      // {
+      //   id: 'money_market',
+      //   label: 'Lend/Borrow',
+      //   content: <MoneyMarketsTable />,
+      // },
     ];
   }, [isSpotTradingEnabled]);
 

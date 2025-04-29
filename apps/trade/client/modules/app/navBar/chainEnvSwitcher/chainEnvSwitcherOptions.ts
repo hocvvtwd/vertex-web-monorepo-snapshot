@@ -11,67 +11,67 @@ export const CHAIN_ENV_SWITCHER_OPTIONS = ((): ChainEnvSwitcherOption[] => {
   switch (clientEnv.base.dataEnv) {
     case 'vertexTestnet':
       return [
-        {
-          label: 'Arbitrum',
-          chainEnv: 'arbitrumTestnet',
-        },
-        {
-          label: 'Base',
-          chainEnv: 'baseTestnet',
-        },
-        {
-          label: 'Mantle',
-          chainEnv: 'mantleTestnet',
-        },
-        {
-          label: 'Sei',
-          chainEnv: 'seiTestnet',
-        },
+        // {
+        //   label: 'Arbitrum',
+        //   chainEnv: 'arbitrumTestnet',
+        // },
+        // {
+        //   label: 'Base',
+        //   chainEnv: 'baseTestnet',
+        // },
+        // {
+        //   label: 'Mantle',
+        //   chainEnv: 'mantleTestnet',
+        // },
+        // {
+        //   label: 'Sei',
+        //   chainEnv: 'seiTestnet',
+        // },
         {
           label: 'Sonic',
           chainEnv: 'sonicTestnet',
         },
-        {
-          label: 'Abstract',
-          chainEnv: 'abstractTestnet',
-        },
-        {
-          label: 'Avalanche',
-          promoteNewRewards: true,
-          chainEnv: 'avaxTestnet',
-        },
+        // {
+        //   label: 'Abstract',
+        //   chainEnv: 'abstractTestnet',
+        // },
+        // {
+        //   label: 'Avalanche',
+        //   promoteNewRewards: true,
+        //   chainEnv: 'avaxTestnet',
+        // },
       ];
     case 'vertexMainnet':
       return [
-        {
-          label: 'Arbitrum',
-          chainEnv: 'arbitrum',
-        },
-        {
-          label: 'Base',
-          chainEnv: 'base',
-        },
-        {
-          label: 'Mantle',
-          chainEnv: 'mantle',
-        },
-        {
-          label: 'Sei',
-          chainEnv: 'sei',
-        },
+        // {
+        //   label: 'Arbitrum',
+        //   chainEnv: 'arbitrum',
+        // },
+        // {
+        //   label: 'Base',
+        //   chainEnv: 'base',
+        // },
+        // {
+        //   label: 'Mantle',
+        //   chainEnv: 'mantle',
+        // },
+        // {
+        //   label: 'Sei',
+        //   chainEnv: 'sei',
+        // },
         {
           label: 'Sonic',
           chainEnv: 'sonic',
         },
-        {
-          label: 'Abstract',
-          chainEnv: 'abstract',
-        },
-        {
-          label: 'Avalanche',
-          promoteNewRewards: true,
-          chainEnv: 'avax',
-        },
+        // {
+        //   label: 'Abstract',
+        //   chainEnv: 'abstract',
+        // },
+        // {
+        //   label: 'Avalanche',
+        //   promoteNewRewards: true,
+        //   chainEnv: 'avax',
+        // },
       ];
     default:
       return [];

@@ -49,28 +49,23 @@ export const VERTEX_SPECIFIC_LINKS = {
 
 export const VERTEX_COMMON_LINKS = {
   appStatus: 'https://vertex.betteruptime.com',
-  cookiePolicy: 'https://vertexprotocol.com/docs/CookiePolicy.pdf',
-  crossChainDocs:
-    'https://docs.vertexprotocol.com/tutorials/cross-chain-deposits',
+  cookiePolicy: 'https://docs.foxify.trade/',
+  crossChainDocs: 'https://docs.foxify.trade/',
   discord: 'https://discord.com/invite/foxifytrade',
-  docs: 'https://docs.vertexprotocol.com/getting-started/overview',
-  faq: 'https://docs.vertexprotocol.com/basics/faqs',
+  docs: 'https://docs.foxify.trade/',
+  faq: 'https://docs.foxify.trade/',
   fastWithdrawalsLearnMore: `https://docs.vertexprotocol.com/tutorials/fast-withdrawals`,
   hacken: 'https://hackenproof.com/company/vertex-protocol/programs',
-  isolatedDocs: 'https://docs.vertexprotocol.com/basics/isolated-margin',
-  lpDocs: 'https://docs.vertexprotocol.com/basics/hybrid-orderbook-amm-design',
-  maintenanceWindowDocs:
-    'https://docs.vertexprotocol.com/more/maintenance-windows-and-status',
+  isolatedDocs: 'https://docs.foxify.trade/',
+  lpDocs: 'https://docs.foxify.trade/',
+  maintenanceWindowDocs: 'https://docs.foxify.trade/',
   marketingSite: 'https://www.foxify.trade/',
-  multipleSubaccountsDocs:
-    'https://docs.vertexprotocol.com/tutorials/multiple-accounts',
-  privacyPolicy: 'https://vertexprotocol.com/docs/PrivacyPolicy.pdf',
-  referralDocs:
-    'https://docs.vertexprotocol.com/community-and-tokenomics/referrals',
-  spotTradingLearnMore: 'https://docs.vertexprotocol.com/tutorials/spot',
-  spreadDocs:
-    'https://docs.vertexprotocol.com/basics/subaccounts-isolated-margin-and-health#special-cases-spreads-lps-and-large-positions',
-  termsOfUse: 'https://vertexprotocol.com/docs/TermsOfUse.pdf',
-  tutorials: 'https://docs.vertexprotocol.com/tutorials/quick-start',
+  multipleSubaccountsDocs: 'https://docs.foxify.trade/',
+  privacyPolicy: 'https://docs.foxify.trade/',
+  referralDocs: 'https://docs.foxify.trade/',
+  spotTradingLearnMore: 'https://docs.foxify.trade/',
+  spreadDocs: 'https://docs.foxify.trade/',
+  termsOfUse: 'https://docs.foxify.trade/',
+  tutorials: 'https://docs.foxify.trade/',
   twitter: 'https://twitter.com/foxifytrade',
 };

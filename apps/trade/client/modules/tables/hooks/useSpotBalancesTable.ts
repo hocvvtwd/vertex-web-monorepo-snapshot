@@ -43,6 +43,12 @@ export const useSpotBalancesTable = ({ marketFilter }: Params) => {
         ) {
           return false;
         }
+        if (
+          balance.metadata.token.symbol === 'VRTX' ||
+          balance.metadata.token.symbol === 'VLP'
+        ) {
+          return false;
+        }
         if (marketFilter?.amount) {
           // Apparently, BigDecimals.ZERO.isPositive() is true
           switch (marketFilter.amount) {

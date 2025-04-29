@@ -184,12 +184,7 @@
 
 @utility text-vertex-gradient-highlight {
   @apply gradient-text;
-  background-image: linear-gradient(
-    277deg,
-    #fff 1.88%,
-    #cd92ec 36.3%,
-    #85c5e0 74.72%
-  );
+  background-image: linear-gradient(277deg, #fff 1.88%, #ff711b 36.3%);
 }
 
 @utility text-sonic-animated-gradient-highlight {

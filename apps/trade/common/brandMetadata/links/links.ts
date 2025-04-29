@@ -5,7 +5,7 @@ import { clientEnv } from 'common/environment/clientEnv';
 const SHARED_LINKS = {
   edge: 'https://edge.vertexprotocol.com/',
   elixir: 'https://app.elixir.finance/',
-  zenDesk: 'https://vertexprotocol.zendesk.com/hc/en-us/requests/new',
+  zenDesk: 'https://docs.foxify.trade/',
   ethWallets: 'https://ethereum.org/en/wallets/find-wallet/',
   feb13DelistInfo:
     'https://discord.com/channels/944256846628266024/1108325256327868446/1338686338312044605',

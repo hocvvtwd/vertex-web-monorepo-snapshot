@@ -1,10 +1,8 @@
 import { joinClassNames } from '@vertex-protocol/web-common';
-import { LinkButton, SecondaryButton } from '@vertex-protocol/web-ui';
+import { SecondaryButton } from '@vertex-protocol/web-ui';
 import { useCookiePreference } from 'client/modules/analytics/useCookiePreference';
 import { getIsIframe } from 'client/utils/getIsIframe';
-import { LINKS } from 'common/brandMetadata/links/links';
 import { clientEnv } from 'common/environment/clientEnv';
-import Link from 'next/link';
 
 export function CookieNoticeBanner() {
   const isIframe = getIsIframe();
@@ -43,16 +41,6 @@ export function CookieNoticeBanner() {
           trading features, and commercial data. You may accept or reject all
           Cookies by clicking on the “Accept All” or “Reject All” button below.
           You may withdraw your consent with respect to Cookies at any time.
-          Click{' '}
-          <LinkButton
-            colorVariant="primary"
-            href={LINKS.cookiePolicy}
-            external
-            as={Link}
-          >
-            here
-          </LinkButton>{' '}
-          to learn more.
         </p>
       </div>
       <ActionButtons

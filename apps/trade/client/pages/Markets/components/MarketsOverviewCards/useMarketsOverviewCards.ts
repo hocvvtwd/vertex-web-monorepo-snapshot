@@ -31,13 +31,13 @@ export function useMarketsOverviewCards() {
       //   }),
       // },
       {
-        title: '24h Trades',
+        title: "Foxify's Trades",
         value: formatNumber(marketsOverview.data?.totalDailyTrades, {
           formatSpecifier: PresetNumberFormatSpecifier.NUMBER_INT,
         }),
       },
       {
-        title: 'All Time Volume',
+        title: "Foxify's Volume",
         value: formatNumber(marketsOverview.data?.totalCumulativeVolumeUsd, {
           formatSpecifier:
             CustomNumberFormatSpecifier.CURRENCY_LARGE_ABBREVIATED,

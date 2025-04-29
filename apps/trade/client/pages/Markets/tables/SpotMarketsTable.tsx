@@ -106,7 +106,7 @@ export function SpotMarketsTable() {
       columnHelper.accessor('volume24h', {
         header: ({ header }) => (
           <HeaderCell header={header}>
-            24h Volume {primaryQuoteToken.symbol}
+            FOXIFY Volume {primaryQuoteToken.symbol}
           </HeaderCell>
         ),
         cell: (context) => (

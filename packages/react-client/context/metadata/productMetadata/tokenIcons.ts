@@ -72,6 +72,7 @@ import wldIcon from './tokenIcons/wld.svg';
 import wstEthIcon from './tokenIcons/wsteth.svg';
 import xrpIcon from './tokenIcons/xrp.svg';
 import zroIcon from './tokenIcons/zro.svg';
+import ebFoxIcon from './tokenIcons/ebFox.svg';
 
 export interface TokenIconMetadata {
   asset: NextImageSrc;
@@ -296,5 +297,8 @@ export const TOKEN_ICONS = {
   },
   zro: {
     asset: zroIcon,
+  },
+  ebFox: {
+    asset: ebFoxIcon,
   },
 } satisfies Record<string, TokenIconMetadata>;

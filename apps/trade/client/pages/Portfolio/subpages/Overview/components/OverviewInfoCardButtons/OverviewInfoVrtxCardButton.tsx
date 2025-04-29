@@ -2,12 +2,12 @@ import {
   formatNumber,
   PresetNumberFormatSpecifier,
   useVertexMetadataContext,
-  VRTX_TOKEN_INFO,
+  EBFOX_TOKEN_INFO,
 } from '@vertex-protocol/react-client';
 import { removeDecimals } from '@vertex-protocol/utils';
 import { Pill } from '@vertex-protocol/web-ui';
 import { useAccountStakingV2State } from 'client/hooks/query/vrtxToken/useAccountStakingV2State';
-import { ROUTES } from 'client/modules/app/consts/routes';
+// import { ROUTES } from 'client/modules/app/consts/routes';
 import { useStakingV2Rewards } from 'client/modules/staking/hooks/useStakingV2Rewards';
 import { OverviewInfoCardButton } from 'client/pages/Portfolio/subpages/Overview/components/OverviewInfoCardButtons/OverviewInfoCardButton';
 import Image from 'next/image';
@@ -35,17 +35,15 @@ export function OverviewInfoVrtxCardButton({ isPrivate }: Props) {
 
   return (
     <OverviewInfoCardButton
-      href={ROUTES.staking}
+      href={'/'}
       title={
-        <span className="text-vertex-gradient-highlight">
-          {VRTX_TOKEN_INFO.symbol} Staked
-        </span>
+        <span className="text-primary">{EBFOX_TOKEN_INFO.symbol} Staked</span>
       }
       value={
         <>
           <Image
-            src={VRTX_TOKEN_INFO.icon.asset}
-            alt={VRTX_TOKEN_INFO.symbol}
+            src={EBFOX_TOKEN_INFO.icon.asset}
+            alt={EBFOX_TOKEN_INFO.symbol}
             className="h-auto w-4"
           />
           {formatNumber(currentStakingBalance, {

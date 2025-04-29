@@ -14,3 +14,4 @@ export * from './tokenIcons';
 export * from './types';
 export * from './vrtxTokenInfo';
 export * from './vlpTokenInfo';
+export * from './ebFoxTokenInfo';

@@ -1,7 +1,5 @@
 import { BigDecimal } from '@vertex-protocol/client';
 import {
-  ARB_CHAIN_ENVS,
-  BLAST_CHAIN_ENVS,
   CustomNumberFormatSpecifier,
   formatNumber,
   PresetNumberFormatSpecifier,
@@ -10,12 +8,10 @@ import {
 import { joinClassNames } from '@vertex-protocol/web-common';
 import { Icons, Pill } from '@vertex-protocol/web-ui';
 import { ROUTES } from 'client/modules/app/consts/routes';
-import { useIsEnabledForChainEnvs } from 'client/modules/envSpecificContent/hooks/useIsEnabledForChainEnvs';
 import { usePrivacySetting } from 'client/modules/privacy/hooks/usePrivacySetting';
-import { OverviewInfoBlitzRewardsCardButton } from 'client/pages/Portfolio/subpages/Overview/components/OverviewInfoCardButtons/OverviewInfoBlitzRewardsCardButton';
 import { OverviewInfoCardButton } from 'client/pages/Portfolio/subpages/Overview/components/OverviewInfoCardButtons/OverviewInfoCardButton';
-import { OverviewInfoVrtxCardButton } from 'client/pages/Portfolio/subpages/Overview/components/OverviewInfoCardButtons/OverviewInfoVrtxCardButton';
 import { getSignDependentColorClassName } from 'client/utils/ui/getSignDependentColorClassName';
+import { OverviewInfoVrtxCardButton } from 'client/pages/Portfolio/subpages/Overview/components/OverviewInfoCardButtons/OverviewInfoVrtxCardButton';
 
 interface Props {
   totalEstimatedPerpPnlUsd: BigDecimal | undefined;
@@ -34,8 +30,6 @@ export function OverviewInfoCardButtons({
   totalEstimatedPerpPnlFrac,
   totalEstimatedPerpPnlUsd,
 }: Props) {
-  const showVrtxCard = useIsEnabledForChainEnvs(ARB_CHAIN_ENVS);
-  const showBlitzCard = useIsEnabledForChainEnvs(BLAST_CHAIN_ENVS);
   const [areAccountValuesPrivate] = usePrivacySetting(
     'areAccountValuesPrivate',
   );
@@ -44,7 +38,7 @@ export function OverviewInfoCardButtons({
     <div
       className={joinClassNames(
         'grid w-full grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-4',
-        showVrtxCard || showBlitzCard ? 'lg:grid-cols-4' : 'lg:grid-cols-3',
+        'lg:grid-cols-4',
       )}
     >
       <OverviewInfoCardButton
@@ -114,14 +108,7 @@ export function OverviewInfoCardButtons({
         }
         isPrivate={areAccountValuesPrivate}
       />
-      {showVrtxCard && (
-        <OverviewInfoVrtxCardButton isPrivate={areAccountValuesPrivate} />
-      )}
-      {showBlitzCard && (
-        <OverviewInfoBlitzRewardsCardButton
-          isPrivate={areAccountValuesPrivate}
-        />
-      )}
+      <OverviewInfoVrtxCardButton isPrivate={areAccountValuesPrivate} />
     </div>
   );
 }

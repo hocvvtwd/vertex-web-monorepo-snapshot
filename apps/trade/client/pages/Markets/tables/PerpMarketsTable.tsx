@@ -115,7 +115,7 @@ export function PerpMarketsTable({ query }: { query: string }) {
       columnHelper.accessor('volume24h', {
         header: ({ header }) => (
           <HeaderCell header={header}>
-            24h Volume {primaryQuoteToken.symbol}
+            FOXIFY Volume {primaryQuoteToken.symbol}
           </HeaderCell>
         ),
         cell: (context) => (
@@ -166,7 +166,7 @@ export function PerpMarketsTable({ query }: { query: string }) {
       columnHelper.accessor('openInterestQuote', {
         header: ({ header }) => (
           <HeaderCell header={header}>
-            Open Int. {primaryQuoteToken.symbol}
+            {`FOXIFY's`} {primaryQuoteToken.symbol}
           </HeaderCell>
         ),
         cell: (context) => (
