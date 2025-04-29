@@ -53,6 +53,6 @@
     0px 36px 36px -18px hsl(0 0% 0% / 0.07);
 
   /* Fonts */
-  --font-default: var(--font-inter);
-  --font-title: var(--font-inter);
+  --font-default: var(--font-helvetica-neue);
+  --font-title: var(--font-helvetica-neue);
 }
