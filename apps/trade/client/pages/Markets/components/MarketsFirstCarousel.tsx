@@ -2,7 +2,7 @@
 
 import { joinClassNames, WithClassnames } from '@vertex-protocol/web-common';
 import { MarketsGainersLosers } from 'client/pages/Markets/components/cards/MarketsGainersLosers/MarketsGainersLosers';
-import { MarketsHotMarkets } from 'client/pages/Markets/components/cards/MarketsHotMarkets/MarketsHotMarkets';
+// import { MarketsHotMarkets } from 'client/pages/Markets/components/cards/MarketsHotMarkets/MarketsHotMarkets';
 import { MarketsTopPredictedFunding } from 'client/pages/Markets/components/cards/MarketsTopPredictedFunding/MarketsTopPredictedFunding';
 import {
   COMMON_SWIPER_CLASSNAME,
@@ -18,9 +18,9 @@ export function MarketsFirstCarousel({ className }: WithClassnames) {
       className={joinClassNames(COMMON_SWIPER_CLASSNAME, className)}
     >
       <SwiperNavigation />
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <MarketsHotMarkets />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide>
         <MarketsGainersLosers />
       </SwiperSlide>

@@ -12,30 +12,30 @@ interface MoreLink {
 export function useMoreLinks(): MoreLink[] {
   return useMemo(
     () => [
-      {
-        label: 'Stats',
-        description: 'Trading & market statistics',
-        href: LINKS.stats,
-        external: true,
-      },
-      {
-        label: 'Docs',
-        description: 'Get started building',
-        href: LINKS.docs,
-        external: true,
-      },
-      {
-        label: 'Status',
-        description: 'Check service status',
-        href: LINKS.appStatus,
-        external: true,
-      },
-      {
-        label: 'Report a Bug',
-        description: 'Help us improve',
-        href: LINKS.hacken,
-        external: true,
-      },
+      // {
+      //   label: 'Stats',
+      //   description: 'Trading & market statistics',
+      //   href: LINKS.stats,
+      //   external: true,
+      // },
+      // {
+      //   label: 'Docs',
+      //   description: 'Get started building',
+      //   href: LINKS.docs,
+      //   external: true,
+      // },
+      // {
+      //   label: 'Status',
+      //   description: 'Check service status',
+      //   href: LINKS.appStatus,
+      //   external: true,
+      // },
+      // {
+      //   label: 'Report a Bug',
+      //   description: 'Help us improve',
+      //   href: LINKS.hacken,
+      //   external: true,
+      // },
       {
         label: 'Website',
         description: 'Visit the official landing page',
@@ -49,17 +49,17 @@ export function useMoreLinks(): MoreLink[] {
         external: true,
       },
       {
-        label: 'Twitter',
+        label: 'X',
         description: 'Stay up to date',
         href: LINKS.twitter,
         external: true,
       },
-      {
-        label: 'Terms of Use',
-        description: 'Legal terms and conditions',
-        href: LINKS.termsOfUse,
-        external: true,
-      },
+      // {
+      //   label: 'Terms of Use',
+      //   description: 'Legal terms and conditions',
+      //   href: LINKS.termsOfUse,
+      //   external: true,
+      // },
     ],
     [],
   );

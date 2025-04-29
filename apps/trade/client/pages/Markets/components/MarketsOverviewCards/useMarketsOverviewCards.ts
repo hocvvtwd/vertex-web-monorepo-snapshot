@@ -16,20 +16,20 @@ export function useMarketsOverviewCards() {
 
   return useMemo(
     (): CardProps[] => [
-      {
-        title: '24h Volume',
-        value: formatNumber(marketsOverview.data?.totalDailyVolumeUsd, {
-          formatSpecifier:
-            CustomNumberFormatSpecifier.CURRENCY_LARGE_ABBREVIATED,
-        }),
-      },
-      {
-        title: 'Open Interest',
-        value: formatNumber(marketsOverview.data?.openInterestUsd, {
-          formatSpecifier:
-            CustomNumberFormatSpecifier.CURRENCY_LARGE_ABBREVIATED,
-        }),
-      },
+      // {
+      //   title: '24h Volume',
+      //   value: formatNumber(marketsOverview.data?.totalDailyVolumeUsd, {
+      //     formatSpecifier:
+      //       CustomNumberFormatSpecifier.CURRENCY_LARGE_ABBREVIATED,
+      //   }),
+      // },
+      // {
+      //   title: 'Open Interest',
+      //   value: formatNumber(marketsOverview.data?.openInterestUsd, {
+      //     formatSpecifier:
+      //       CustomNumberFormatSpecifier.CURRENCY_LARGE_ABBREVIATED,
+      //   }),
+      // },
       {
         title: '24h Trades',
         value: formatNumber(marketsOverview.data?.totalDailyTrades, {

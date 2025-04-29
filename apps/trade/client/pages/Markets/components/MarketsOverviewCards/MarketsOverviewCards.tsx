@@ -8,7 +8,7 @@ export function MarketsOverviewCards({ className }: WithClassnames) {
   const marketsPageOverviewCards = useMarketsOverviewCards();
 
   return (
-    <div className={joinClassNames('grid gap-4 sm:grid-cols-2', className)}>
+    <div className={joinClassNames('grid gap-4 sm:grid-cols-1', className)}>
       {marketsPageOverviewCards.map(({ title, value }) => (
         <MarketsOverviewCard
           title={title}

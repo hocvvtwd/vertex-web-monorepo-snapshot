@@ -1,6 +1,6 @@
 import { AppPage } from 'client/modules/app/AppPage';
 import { BlitzMarketBoostsDisclosure } from 'client/pages/Markets/components/BlitzMarketBoostsDisclosure';
-import { MarketsCarouselBanner } from 'client/pages/Markets/components/MarketsCarouselBanner/MarketsCarouselBanner';
+// import { MarketsCarouselBanner } from 'client/pages/Markets/components/MarketsCarouselBanner/MarketsCarouselBanner';
 import { MarketsFirstCarousel } from 'client/pages/Markets/components/MarketsFirstCarousel';
 import { MarketsOverviewCards } from 'client/pages/Markets/components/MarketsOverviewCards/MarketsOverviewCards';
 import { MarketsPageHeader } from 'client/pages/Markets/components/MarketsPageHeader';
@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
 export function MarketsPage() {
   return (
     <AppPage.Content>
-      <MarketsCarouselBanner />
+      {/* <MarketsCarouselBanner /> */}
       <MarketsPageHeader />
       <BlitzMarketBoostsDisclosure />
       <div

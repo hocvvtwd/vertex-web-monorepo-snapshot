@@ -21,7 +21,7 @@ import { useFundingRatePeriod } from 'client/modules/trading/hooks/useFundingRat
 
 export function PerpMarketInfoCards({ className }: WithClassnames) {
   const { show } = useDialog();
-  const { productId, millisToNextFunding, perpMarketInfo, quoteSymbol } =
+  const { productId, millisToNextFunding, perpMarketInfo } =
     usePerpMarketInfoCards();
   const { fundingRatePeriod } = useFundingRatePeriod();
   const fundingRate = perpMarketInfo?.fundingRates?.[fundingRatePeriod];
@@ -82,7 +82,7 @@ export function PerpMarketInfoCards({ className }: WithClassnames) {
         }
       />
       <Divider vertical className="h-6" />
-      <MarketInfoCard
+      {/* <MarketInfoCard
         label="24h Volume"
         labelPostfix={quoteSymbol}
         value={formatNumber(perpMarketInfo?.quoteVolume24h, {
@@ -90,7 +90,7 @@ export function PerpMarketInfoCards({ className }: WithClassnames) {
         })}
         flashOnChangeKey={perpMarketInfo?.quoteVolume24h}
       />
-      <Divider vertical className="h-6" />
+      <Divider vertical className="h-6" /> */}
       <MarketInfoCard
         label="Oracle Price"
         definitionTooltipId="oraclePrice"
@@ -100,7 +100,7 @@ export function PerpMarketInfoCards({ className }: WithClassnames) {
         flashOnChangeKey={perpMarketInfo?.oraclePrice}
       />
       <Divider vertical className="h-6" />
-      <MarketInfoCard
+      {/* <MarketInfoCard
         label="Spot Index Price"
         definitionTooltipId="perpUnderlyingSpotIndexPrice"
         value={formatNumber(perpMarketInfo?.indexPrice, {
@@ -108,8 +108,8 @@ export function PerpMarketInfoCards({ className }: WithClassnames) {
         })}
         flashOnChangeKey={perpMarketInfo?.indexPrice}
       />
-      <Divider vertical className="h-6" />
-      <MarketInfoCard
+      <Divider vertical className="h-6" /> */}
+      {/* <MarketInfoCard
         label="Open Interest"
         labelPostfix={quoteSymbol}
         definitionTooltipId="perpOpenInterest"
@@ -118,7 +118,7 @@ export function PerpMarketInfoCards({ className }: WithClassnames) {
         })}
         flashOnChangeKey={perpMarketInfo?.openInterestQuote}
       />
-      <Divider vertical className="h-6" />
+      <Divider vertical className="h-6" /> */}
       <MarketInfoCard
         label="Predicted Funding"
         definitionTooltipId="perpFundingRate1h"

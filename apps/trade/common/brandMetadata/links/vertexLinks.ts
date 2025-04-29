@@ -52,7 +52,7 @@ export const VERTEX_COMMON_LINKS = {
   cookiePolicy: 'https://vertexprotocol.com/docs/CookiePolicy.pdf',
   crossChainDocs:
     'https://docs.vertexprotocol.com/tutorials/cross-chain-deposits',
-  discord: 'https://discord.gg/vertexprotocol',
+  discord: 'https://discord.com/invite/foxifytrade',
   docs: 'https://docs.vertexprotocol.com/getting-started/overview',
   faq: 'https://docs.vertexprotocol.com/basics/faqs',
   fastWithdrawalsLearnMore: `https://docs.vertexprotocol.com/tutorials/fast-withdrawals`,
@@ -61,7 +61,7 @@ export const VERTEX_COMMON_LINKS = {
   lpDocs: 'https://docs.vertexprotocol.com/basics/hybrid-orderbook-amm-design',
   maintenanceWindowDocs:
     'https://docs.vertexprotocol.com/more/maintenance-windows-and-status',
-  marketingSite: 'https://vertexprotocol.com',
+  marketingSite: 'https://www.foxify.trade/',
   multipleSubaccountsDocs:
     'https://docs.vertexprotocol.com/tutorials/multiple-accounts',
   privacyPolicy: 'https://vertexprotocol.com/docs/PrivacyPolicy.pdf',
@@ -72,5 +72,5 @@ export const VERTEX_COMMON_LINKS = {
     'https://docs.vertexprotocol.com/basics/subaccounts-isolated-margin-and-health#special-cases-spreads-lps-and-large-positions',
   termsOfUse: 'https://vertexprotocol.com/docs/TermsOfUse.pdf',
   tutorials: 'https://docs.vertexprotocol.com/tutorials/quick-start',
-  twitter: 'https://twitter.com/vertex_protocol',
+  twitter: 'https://twitter.com/foxifytrade',
 };

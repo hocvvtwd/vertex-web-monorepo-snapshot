@@ -7,7 +7,7 @@ import { DesktopMoreLinksPopover } from 'client/modules/app/navBar/moreLinks/Des
 import { MobileMoreLinksCollapsible } from 'client/modules/app/navBar/moreLinks/MobileMoreLinksCollapsible';
 import { DesktopNavMarketSwitcher } from 'client/modules/app/navBar/trade/DesktopNavMarketSwitcher/DesktopNavMarketSwitcher';
 import { MobileNavTradeCollapsible } from 'client/modules/app/navBar/trade/MobileNavTradeCollapsible';
-import { useEnabledFeatures } from 'client/modules/envSpecificContent/hooks/useEnabledFeatures';
+// import { useEnabledFeatures } from 'client/modules/envSpecificContent/hooks/useEnabledFeatures';
 import { useIsEnabledForChainEnvs } from 'client/modules/envSpecificContent/hooks/useIsEnabledForChainEnvs';
 import { ElementType, ReactNode, useMemo } from 'react';
 
@@ -58,8 +58,8 @@ export function useAppNavItems() {
   const showBlitzNavItems = useIsEnabledForChainEnvs(BLAST_CHAIN_ENVS);
   // const showVertexTradingCompetitionsPopover = useIsEnabledForBrand(['vertex']);
 
-  const { isStakingPageEnabled, isSonicPointsPageEnabled } =
-    useEnabledFeatures();
+  // const { isStakingPageEnabled, isSonicPointsPageEnabled } =
+  //   useEnabledFeatures();
 
   return useMemo(
     () =>
@@ -94,36 +94,36 @@ export function useAppNavItems() {
             Mobile: MobileEarnCollapsible,
           },
         },
-        ...(isStakingPageEnabled
-          ? [
-              {
-                id: 'staking',
-                type: 'link',
-                href: ROUTES.staking,
-                label: (
-                  <span className="text-vertex-animated-gradient-highlight">
-                    VRTX
-                  </span>
-                ),
-                basePath: ROUTES.staking,
-              },
-            ]
-          : []),
-        ...(isSonicPointsPageEnabled
-          ? [
-              {
-                id: 'gems',
-                type: 'link',
-                href: ROUTES.gems,
-                label: (
-                  <span className="text-sonic-animated-gradient-highlight">
-                    Sonic Gems
-                  </span>
-                ),
-                basePath: ROUTES.gems,
-              },
-            ]
-          : []),
+        // ...(isStakingPageEnabled
+        //   ? [
+        //       {
+        //         id: 'staking',
+        //         type: 'link',
+        //         href: ROUTES.staking,
+        //         label: (
+        //           <span className="text-vertex-animated-gradient-highlight">
+        //             VRTX
+        //           </span>
+        //         ),
+        //         basePath: ROUTES.staking,
+        //       },
+        //     ]
+        //   : []),
+        // ...(isSonicPointsPageEnabled
+        //   ? [
+        //       {
+        //         id: 'gems',
+        //         type: 'link',
+        //         href: ROUTES.gems,
+        //         label: (
+        //           <span className="text-sonic-animated-gradient-highlight">
+        //             Sonic Gems
+        //           </span>
+        //         ),
+        //         basePath: ROUTES.gems,
+        //       },
+        //     ]
+        //   : []),
         // ...(showVertexTradingCompetitionsPopover
         //   ? [
         //       {
@@ -146,6 +146,6 @@ export function useAppNavItems() {
           },
         },
       ] as AppNavItem[],
-    [isStakingPageEnabled, isSonicPointsPageEnabled, showBlitzNavItems],
+    [showBlitzNavItems],
   );
 }
