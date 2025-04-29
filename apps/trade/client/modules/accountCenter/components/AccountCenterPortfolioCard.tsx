@@ -11,8 +11,6 @@ import { useIsConnected } from 'client/hooks/util/useIsConnected';
 import { useDialog } from 'client/modules/app/dialogs/hooks/useDialog';
 import { DepositEntrypointButton } from 'client/modules/collateral/deposit/components/DepositEntrypointButton/DepositEntrypointButton';
 import { getTradeAppColorVar } from 'client/modules/theme/colorVars';
-import { IMAGES } from 'common/brandMetadata/images';
-import Image from 'next/image';
 
 /**
  * Card with portfolio value and collateral buttons
@@ -29,14 +27,14 @@ export function AccountCenterPortfolioCard() {
 
   return (
     <Card className="bg-background relative flex flex-col gap-y-4 overflow-hidden border-4 p-4">
-      <Image
+      {/* <Image
         src={IMAGES.brandBg}
         alt=""
         fill
         sizes="95vw"
         className="object-cover"
         priority
-      />
+      /> */}
       {/*isolate needed here to display content over the bg image*/}
       <div className="isolate flex justify-between">
         <ValueWithLabel.Vertical
