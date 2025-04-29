@@ -11,7 +11,7 @@ export function DesktopMoreLinksPopover() {
   return (
     <DesktopNavCustomPopover
       triggerContent={<AppNavItemButton withCaret>More</AppNavItemButton>}
-      popoverClassName="grid grid-cols-2 w-[510px]"
+      popoverClassName="grid grid-cols-1 w-[210px]"
       popoverContent={moreLinks.map(
         ({ label, href, external, description }) => {
           return (

@@ -49,7 +49,7 @@ export function useMoreLinks(): MoreLink[] {
         external: true,
       },
       {
-        label: 'X',
+        label: 'Twitter',
         description: 'Stay up to date',
         href: LINKS.twitter,
         external: true,
